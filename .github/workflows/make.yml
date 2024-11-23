@@ -6,16 +6,16 @@ on:
      pull_request:
         branches: [main]
      jobs:
-         run-shell-commands:
-                                                              runs-on: ubuntu-latest
-                                                                            steps:
-                                                                                            - name: Checkout
-                                                                                                              uses: actions/checkout@v4
-                                                                                                                              - name: echo String
-                                                                                                                                                run:  echo "mjk best pls have a look"
-                                                                                                                                                                - name: Multi-line Script
-                                                                                                                                                                                  run: |
-                                                                                                                                                                                                       whoami
-                                                                                                                                                                                                                          pwd
-                                                                                                                                                                                                                                        - name: mark the end
-                                                                                                                                                                                                                                                          run: echo "today will be perfect"
+        run-shell-commands:
+            runs-on: ubuntu-latest
+        steps:
+     - name: Checkout
+         uses: actions/checkout@v4
+     - name: echo String
+         run:  echo "mjk best pls have a look"
+      - name: Multi-line Script
+           run: |
+               whoami
+                pwd
+      - name: mark the end
+            run: echo "today will be perfect"
