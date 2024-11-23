@@ -19,4 +19,4 @@ on:
                    whoami
                    pwd
               - name: mark the end
-                run: echo "end of history"
+                run: echo "end of history as we dey run am"
