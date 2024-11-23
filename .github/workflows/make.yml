@@ -12,10 +12,8 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v4
         - name: echo String
-          run:  echo "mjk best pls have a look"
+          run:  echo "God made it possible for me"
         - name: Multi-line Script
           run: |
                whoami
                 pwd
-        - name: mark the end
-          run: echo "today will be perfect"
